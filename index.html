@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Branching</title>
+
+		<meta name="description" content="Branching Konzept am Beispiel Gitflow">
+		<meta name="author" content="Tobias Reinwarth">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized_modified.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +27,100 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>GIT Branching</h1>
+					<h4>Branching Konzepte am Beispiel Gitflow</h4>
+				</section>
+				<section>
+					<section>
+						<h2>Allgemeines</h2>
+						<img style="width:30%" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png"/>
+					</section>
+                    <section>
+                        <h2>Was ist ein Branch?</h2>
+                        <img style="width:50%" src="https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/hero.svg"/>
+                        <ul>
+                            <li>Ein Branch ist ein unabhängiger Entwicklungszweig</li>
+                            <li>Eigene Working Directory</li>
+                            <li>Eigene Staging Area</li>
+                            <li>Eigene History</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Master-Branch</h2>
+                        <p>Master Branch ist standartmäßig der Haupt- und Default-Branch, man könnte auch trunk (Stamm) sagen. </p>
+                    </section>
+                    <section>
+                        <h2>Warum mehr als ein Branch?</h2>
+                        <ul>
+                            <li>Strukturierung von Aufgaben und Projektständen</li>
+                            <li>Kollaboratives Arbeiten</li>
+                            <li>Release-Management und Historie</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Wie? Wann? Wo? lege ich Branches an?</h2>
+						<h3>Verschiedene Branch <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/" target="_blank">Modelle</a></h3>
+                        <ul>
+                            <li>Centralized Workflow</li>
+                            <li>Feature Branch Workflow</li>
+                            <li>Gitflow Workflow</li>
+							<li>Forking Workflow</li>
+                        </ul>
+                    </section>
+				</section>
+				<section>
+                    <section>
+                        <h2>Gitflow</h2>
+                        <img style="width:100%" src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/gitflow-workflow/01.svg"/>
+                    </section>
+					<section>
+						<img style="width:50%" src="http://i.imgur.com/cXclkJJ.gif"/>
+					</section>
+                    <section>
+                        <h2>Fortlaufende Branches</h2>
+                        <img style="width:100%" src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/gitflow-workflow/02.svg"/>
+                    </section>
+					<section>
+						<h2>Feature Branches</h2>
+						<img style="width:100%" src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/gitflow-workflow/03.svg"/>
+					</section>
+					<section>
+						<h2>Release Branches</h2>
+						<img style="width:90%" src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/gitflow-workflow/04.svg"/>
+					</section>
+					<section>
+						<h2>Hotfix Branches</h2>
+						<img style="width:80%" src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/gitflow-workflow/05.svg"/>
+					</section>
+				</section>
+				<section>
+					<h2>Ausblick</h2>
+					<ul>
+						<li>Testautomatisierung</li>
+						<li>Continuous Integration</li>
+						<li>One Click Deployment</li>
+						<li>Continuous Delivery</li>
+					</ul>
+					<p>
+						<img style="width: 10%" src="https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png?version=1&modificationDate=1302753947000"/>
+					</p>
+				</section>
+				<section>
+					<h2>Fragen</h2>
+					<ul>
+						<li>Ist Gitflow sinnvoll für ein kleines Entwicklerteam?</li>
+						<li>Verhältnis Code/Konfiguration?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Quellen</h2>
+					<ul>
+						<li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">Attlassian Git Tutorial</a></li>
+						<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/Logo" target="_blank">Wiki Jenkins CI</a></li>
+						<li><a href="https://git-scm.com/" target="_blank">GIT</a></li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
